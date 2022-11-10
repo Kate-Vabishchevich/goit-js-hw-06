@@ -1,3 +1,15 @@
+const inputEl = document.querySelector('#validation-input');
+console.log(inputEl);
+const inputLength = Number(inputEl.dataset.length);
+console.log(inputLength);
+
+inputEl.addEventListener('blur', (event) => {
+    if (event.currentTarget.value.length === inputLength) {
+        inputEl.classList.add('.valid')
+    } else inputEl.classList.add('.invalid');
+})
+
+
 // Напиши скрипт, який під час втрати фокусу на інпуті(подія blur),
 // перевіряє його вміст щодо правильної кількості введених символів.
 
@@ -22,11 +34,7 @@
 // #validation-input.invalid {
 //   border-color: #f44336;
 // }
-const symbolCouner = document.querySelector('input');
-// console.log(symbolCouner)
-const checkingInputLength = document.querySelector('data-length');
-console.log(checkingInputLength)
 
-symbolCouner.addEventListener('blur', (event) => {
 
-} )
+
+
