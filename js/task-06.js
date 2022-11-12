@@ -7,9 +7,11 @@ inputEl.addEventListener('blur', (event) => {
     if (event.currentTarget.value.length === inputLength) {
         inputEl.classList.remove('invalid');
         inputEl.classList.add('valid');
-    } else
+    } else {
         inputEl.classList.remove('valid');
         inputEl.classList.add('invalid');
+    }
+        
 })
 
 
